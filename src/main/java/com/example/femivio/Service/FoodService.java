@@ -16,4 +16,12 @@ public class FoodService {
     public List<Food> getAllFoods() {
         return foodRepository.findAll();
     }
+
+    public Food addFood(Food food) {
+        return foodRepository.save(food);
+    }
+
+    public Food getFoodById(Long id) {
+        return foodRepository.findById(id).orElse(null);
+    }
 }
