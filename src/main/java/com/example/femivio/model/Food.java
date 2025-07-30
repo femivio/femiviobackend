@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name = "Food")
+@Table(name = "Food")
 public class Food {
 
     @Id
@@ -18,7 +18,6 @@ public class Food {
     private String imageUrl;
     private double price;
 
-    // Constructors
     public Food() {}
 
     public Food(Long id, String name, String imageUrl, double price) {
@@ -27,8 +26,6 @@ public class Food {
         this.imageUrl = imageUrl;
         this.price = price;
     }
-
-    // Getters & Setters
 
     public Long getId() {
         return id;
@@ -62,4 +59,3 @@ public class Food {
         this.price = price;
     }
 }
-
