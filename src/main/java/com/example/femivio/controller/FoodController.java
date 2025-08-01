@@ -1,3 +1,5 @@
+// src/main/java/com/example/femivio/controller/FoodController.java
+
 package com.example.femivio.controller;
 
 import com.example.femivio.Repository.FoodRepository;
@@ -9,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/food")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 public class FoodController {
 
     @Autowired
@@ -20,4 +22,3 @@ public class FoodController {
         return foodRepository.findAll();
     }
 }
-
